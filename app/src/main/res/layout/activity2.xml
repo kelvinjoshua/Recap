@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    android:orientation="vertical"
+
+    android:padding="@dimen/body_padding">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/firstimage"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/textSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="@string/author" />
+
+    <EditText
+        style="@style/textSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="Instrument"
+        android:id="@+id/hobbies"
+        android:hint="@string/hint"
+        android:inputType="text" />
+
+    <Button
+        style="@style/textSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:id="@+id/submit"
+        android:text="@string/buttonText" />
+
+    <TextView
+        android:id="@+id/shownText"
+        style="@style/textSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="2"
+            android:text="@string/placeholder"
+            android:textSize="20sp" />
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
