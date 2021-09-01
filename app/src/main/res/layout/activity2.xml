@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="#FFEB3B"
     android:orientation="vertical"
-
     android:padding="@dimen/body_padding">
 
     <ImageView
@@ -64,5 +63,7 @@
             android:text="@string/placeholder"
             android:textSize="20sp" />
     </ScrollView>
+
+
 
 </androidx.appcompat.widget.LinearLayoutCompat>
