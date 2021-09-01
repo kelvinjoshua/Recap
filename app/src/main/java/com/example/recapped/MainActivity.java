@@ -3,6 +3,7 @@ package com.example.recapped;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -19,5 +20,8 @@ public class MainActivity extends AppCompatActivity {
         hobbies = findViewById(R.id.hobbies);
         shownHobbies = findViewById(R.id.shownText);
 
+    }
+
+    public void showData(View view) {
     }
 }
