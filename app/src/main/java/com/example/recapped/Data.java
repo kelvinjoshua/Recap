@@ -1,15 +1,11 @@
-package com.example.recapped.Bio;
+package com.example.recapped;
 
 public class Data {
+
     private String name;
     private  String hobbies;
 
-    public Data(String name, String hobbies) {
-        this.name = name;
-        this.hobbies = hobbies;
-    }
-    public Data() {
-    }
+
 
     public String getName() {
         return name;

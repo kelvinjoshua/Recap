@@ -3,7 +3,7 @@
     <data>
         <variable
             name="data"
-            type="com.example.recapped.Bio.Data" />
+            type="com.example.recapped.Data" />
     </data>
 
     <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"

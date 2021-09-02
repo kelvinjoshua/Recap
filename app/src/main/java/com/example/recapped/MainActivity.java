@@ -9,11 +9,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 
-import com.example.recapped.Bio.Data;
 import com.example.recapped.databinding.Activity2Binding;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -21,7 +17,7 @@ import static java.lang.String.format;
 
 public class MainActivity extends AppCompatActivity {
     private Activity2Binding binding;
-    public final Data data = new Data();//final to be acceessible in show data method
+    private final Data data = new Data();//final to be acceessible in show data method
     //public Button done;
     //public EditText hobbies;
     //public TextView shownHobbies;
@@ -30,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this,R.layout.activity2);
-        data.setName("Kelvin joshua");//bind the data
+        data.setName("Kelvin Bale");//bind the data
         binding.setData(data); //bind data to the view
         binding.submit.setOnClickListener(this::showData);
 
@@ -48,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         Snackbar.make(binding.submit, R.string.snack,Snackbar.LENGTH_LONG).setAction("MORE", v -> Log.d(TAG, "Snackbar works effectively")).show();
         binding.invalidateAll();
         // toggle visibility
-        binding.hobbies.setVisibility(View.VISIBLE);
+        binding.shownText.setVisibility(View.VISIBLE);
         //Hide keyboard after typing - cast to store it in this object
         InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         //From the view that triggered the keyboard popup signal it to close the keyboard.
