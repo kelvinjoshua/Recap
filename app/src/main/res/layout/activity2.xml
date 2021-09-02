@@ -31,8 +31,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:text="@string/author" />
-
+            android:text="@{data.name}"
+             />
+        <!-- android:text="@string/author" -->
         <EditText
             style="@style/textSize"
             android:layout_width="match_parent"
@@ -55,6 +56,7 @@
         <TextView
             android:id="@+id/shownText"
             style="@style/textSize"
+            android:text="@{data.hobbies}"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:visibility="invisible" />
